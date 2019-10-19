@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script>
+        $.ajax({
+            headers: { 'X-Auth-Token': 'YOUR_API_TOKEN' },
+            url: 'http://api.football-data.org/v2/matches?status='LIVE',
+            dataType: 'json',
+            type: 'GET',
+          }).done(function(response) {
+            // do something with the response, e.g. isolate the id of a linked resource   
+            console.log(response);
+          });
+    </script>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+    #box{
+        width: 380px;
+        margin: 30px auto;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+    }
+    input{
+        width: 260px;
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        float: left;
+        background-image: url(images/search.jpg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position:5px center;
+        padding:0 0 0 40px;
+    }
+    #search{
+        width: 78px;
+        height: 32px;
+        float: right;
+        background: black;
+        color: white;
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+    }
+ 
+</style>
+</head>
+<body bgcolor="rgb(0,0,128)">
+
+	<h1 style="color:Tomato;"><center> The Soccer!<center>
+    </h1>
+	<h2 style="color:DodgerBlue;"> Team List
+    <div id="box">
+        <input type="text" name="search" placeholder="Search a team">
+        <div id="search">Search</div>  
+    </div>
+    </h2>
+    <h3 style="color:DodgerBlue;"> Player List
+	<div id="box">
+        <input type="text" name="search" placeholder="Search a Player">
+        <div id="search">Search</div>  
+    </div>
+    </h3>
+   	<h4>
+    <a href="https://www.football-data.org/coverage">Football coverage</a>
+    </h4>
+    
+    <h5>
+ 	<img src="https://www.e-dublin.com.br/wp-content/uploads/2013/09/soccer.jpg" alt="Soccer" style="width:600px;height:400px;">
+    </h5>
+	//legand table
+
+	//Last match result
+
+	//Last 5 games
+
+	//All matches for the whole competition
+
+	//Head to head result with the rival
+
+	//Player detail
+
+	//Team information
+
+
+</body>
+</html>
